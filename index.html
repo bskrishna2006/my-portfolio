@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -29,13 +34,12 @@
                 I'm a second-year BTech CSBS student with a passion for software development, machine learning, and innovative tech solutions. I enjoy exploring new technologies, building meaningful projects, and solving complex problems. My goal is to join a top tech company like FAANG and make a lasting impact in the tech world
             </p>
              <div class="btn-box">
-                <button class="btn-1">Hire Me</button>
-                <button class="btn-2">Experience</button>
+                <a class="btn-1" href="#contact">Hire Me</a>
+                <a class="btn-2" href="#skills">Skills</a>
              </div>
         </div>
         <div class="img-box">
           <img src="img.jpg" alt="Krishna Image"> 
-
         </div>
     </section>
     <section class="about">
@@ -51,7 +55,7 @@
             <a href="#" class="btn-2">Experience</a>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skills-container">
             <div class="skills-left">
@@ -104,7 +108,7 @@
         </div>
     </section>
     <div  class="div-col"   style="background-color: black;">
-    <section class="contact-form">
+    <section class="contact-form" id="contact">
         <h2 class="contact-me">Contact <span>Me</span></h2>
         <form action="mailto:krishna0304006@gmail.com" method="post" enctype="text/plain">
             <div class="input-box">
