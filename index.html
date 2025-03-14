@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
@@ -15,7 +17,10 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Krishna </span>BS</a>
+        <a href="#" class="logo">Krishna <span>BS</span></a>
+        
+        <i class="fas fa-bars" id="menu-icon"></i>
+        
         <nav class="navbar">
             <a href="#" class="active">Portfolio</a>
             <a href="#">Services</a>
@@ -48,8 +53,8 @@
         </div>
         <div class="about-content">
             <h2 class="heading">About<span> Me</span></h2>
-            <h3>Frontend<span>Developer</span></h3>
-            <p>I am a second-year Computer Science and Business Systems student passionate about technology and innovation. Skilled in Web development, I’m currently 
+            <h3>Machine Learning<span style="color: #DDA853;"> Engineer</span></h3>
+            <p>I am a second-year Computer Science and Business Systems student passionate about technology and innovation. Skilled in Web development, I'm currently 
             exploring React and machine learning to build impactful solutions. My short-term goal is to join a top-tier tech company, contributing to transformative projects
             that blend creativity and functionality.</p>
             <a href="#" class="btn-2">Experience</a>
@@ -60,7 +65,7 @@
         <div class="skills-container">
             <div class="skills-left">
                 <blockquote>
-                    <p>If not now, Then when?” – Krishna Subramani</p>
+                    <p>"If not now, Then when?" – Krishna Subramani</p>
                 </blockquote>
                 <ul>
                     <li><strong>Programming Languages:</strong> Proficient in Java, Python, JavaScript, and C++.</li>
@@ -110,14 +115,21 @@
     <div  class="div-col"   style="background-color: black;">
     <section class="contact-form" id="contact">
         <h2 class="contact-me">Contact <span>Me</span></h2>
-        <form action="mailto:krishna0304006@gmail.com" method="post" enctype="text/plain">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="number" placeholder="Phone Number" name="phone" required>
-                <input type="text" placeholder="Subject" name="subject" required>  
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
             </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-            <input type="submit" value="Send Message" class="btn-1" id="send-msg">
+            <div class="input-box">
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <button type="submit" id="send-msg">Send Message</button>
         </form>
+        <div id="success-message" style="display: none;">
+            Message sent successfully!
+        </div>
     </section>
 </div>
     <footer class="footer">
@@ -135,5 +147,7 @@
         </ul>
         <p class="copyright">&copy; 2025 Krishna | All rights reserved.</p>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
